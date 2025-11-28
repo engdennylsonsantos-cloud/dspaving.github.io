@@ -63,6 +63,17 @@ const SubscriptionPage: React.FC = () => {
         }
     };
 
+    const handleManualActivation = async () => {
+        const confirmed = window.confirm(
+            'Confirme que você JÁ REALIZOU O PAGAMENTO no Mercado Pago.\n\n' +
+            'Clique OK apenas se o pagamento foi aprovado.'
+        );
+
+        if (!confirmed) return;
+
+        await handlePaymentSuccess('manual-activation-' + Date.now());
+    };
+
     const createSubscription = async (plan: 'mensal' | 'anual') => {
         setProcessingPlan(plan);
         localStorage.setItem('last_selected_plan', plan);
