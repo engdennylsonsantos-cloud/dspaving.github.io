@@ -59,7 +59,9 @@ BEGIN
             'currency_id', 'BRL'
         ),
         -- URL de produção no Netlify
-        'back_url', 'https://dspaving.netlify.app/subscription'
+        'back_url', 'https://dspaving.netlify.app/subscription',
+        -- IMPORTANTE: URL para receber notificações de pagamento
+        'notification_url', 'https://nyfroxmreviaqgbczzts.supabase.co/functions/v1/mercadopago-webhook'
         -- Removido 'status': 'authorized' (CAUSA ERRO 400)
     );
     -- NOTA: Para assinaturas, o MP nem sempre manda payment_id na URL de volta.

@@ -47,6 +47,41 @@ const SubscriptionPage: React.FC = () => {
         }
     }, [searchParams]);
 
+    const handleManualCheck = async () => {
+        if (!user) return;
+
+        setProcessingPaymentReturn(true);
+        try {
+            console.log('Verificando pagamento manualmente para:', user.id);
+
+            // Chamar a função check-payment que busca no MP
+            const { data, error } = await supabase.functions.invoke('check-payment', {
+                body: { user_id: user.id }
+            });
+
+            console.log('Check result:', { data, error });
+
+            if (error) {
+                alert('Erro ao verificar: ' + error.message);
+                return;
+            }
+
+            if (data?.success) {
+                await refreshLicense();
+                alert('Pagamento confirmado! Sua licença foi ativada.');
+                navigate(LINKS.DASHBOARD);
+            } else {
+                alert('Nenhum pagamento ou assinatura aprovada encontrada ainda.\n\nSe você acabou de pagar, aguarde 1-2 minutos e tente novamente.');
+            }
+        } catch (error: any) {
+            console.error('Error:', error);
+            alert('Erro ao verificar status: ' + (error.message || 'Tente novamente'));
+        } finally {
+            setProcessingPaymentReturn(false);
+        }
+    };
+
+
     const createSubscription = async (plan: 'mensal' | 'anual') => {
         setProcessingPlan(plan);
         localStorage.setItem('last_selected_plan', plan);
@@ -188,11 +223,13 @@ const SubscriptionPage: React.FC = () => {
                         </p>
                         <div className="flex justify-center gap-4">
                             <Button
-                                onClick={refreshLicense}
+                                onClick={handleManualCheck}
+                                loading={processingPaymentReturn}
+                                disabled={processingPaymentReturn}
                                 variant="secondary"
                                 className="bg-blue-600/20 hover:bg-blue-600/40 border-blue-500/50"
                             >
-                                Verificar Agora
+                                {processingPaymentReturn ? 'Verificando...' : 'Verificar Pagamento Agora'}
                             </Button>
                         </div>
                     </div>
