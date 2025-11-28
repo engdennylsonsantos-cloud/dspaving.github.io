@@ -223,6 +223,28 @@ const SubscriptionPage: React.FC = () => {
 
                     </div>
 
+                    {/* Manual Activation Section */}
+                    <div className="w-full max-w-4xl mt-12 animate-fade-in-up">
+                        <div className="bg-primary/10 border border-primary/30 rounded-xl p-6">
+                            <h3 className="text-lg font-bold text-white mb-2 flex items-center gap-2">
+                                <span className="material-icons text-primary">verified</span>
+                                Pagamento Já Realizado?
+                            </h3>
+                            <p className="text-gray-300 text-sm mb-4">
+                                Se você já confirmou o pagamento no Mercado Pago, clique no botão abaixo para ativar sua licença imediatamente:
+                            </p>
+                            <Button
+                                onClick={handleManualActivation}
+                                loading={processingPaymentReturn}
+                                disabled={processingPaymentReturn}
+                                variant="primary"
+                                className="bg-primary hover:bg-primary/90 border-none"
+                            >
+                                Ativar Minha Licença
+                            </Button>
+                        </div>
+                    </div>
+
                     <p className="mt-12 text-gray-500 text-sm text-center max-w-xl">
                         Pagamentos processados de forma segura pelo Mercado Pago.
                         Sua licença será ativada automaticamente após a confirmação do pagamento.
