@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DSPaving - Projetos de Pavimentação</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Montserrat:wght@400;500;700;800&family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: "#F97316", // Orange-500
+                            dark: "#EA580C",    // Orange-600
+                            light: "#FB923C",   // Orange-400
+                        },
+                        secondary: {
+                            DEFAULT: "#1F2937", // Gray-800
+                            dark: "#111827",    // Gray-900
+                            light: "#374151",   // Gray-700
+                        },
+                        asphalt: "#121212",
+                    },
+                    fontFamily: {
+                        sans: ["Roboto", "sans-serif"],
+                        condensed: ["Roboto Condensed", "sans-serif"],
+                        montserrat: ["Montserrat", "sans-serif"],
+                        inter: ["Inter", "sans-serif"],
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAVUwDT1nVtbPX1KlPFZ4cni5_fnEYLtmLvhC3nH7PVHXc2JHs8F6Xo2gjJdnO0T-xxRxBwtLaqxPgtVFo_b3rzjOOxO-P5iGi48pmR68WslYvLDHMUMvieWY4kEJtc06mmStPOn2hvN-vGEhHLJ77wg90GKoTTBCoo2CIX7pgcHLjnhRloU4Ujnd-NjxcAXiA9zTtqnm0rjkwg0DI3-krdX0RCHlA0AeXsT-orHGHR2PHolwhwT3adJ3ZuycHOoh1i64cOh_JiWyTu')",
+                        'asphalt-texture': "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDO55j5kEJnuIinBSkwd9j978lJQnD4l8HrOWR_TD_cio0HoISHZYWCzxwCK356pXB5xXt27cgOas-YdYUlJQYpM72ckJNFr1n_IJp-X7Jq6IKYP11H72MxaV5o1RlYxA-3Kij0_2X3KRl68zIBxpQEioZF02VTi5OO2GCtpYDfy_JZJI-7QJ76Ad5lGo87xqoIDe68Of11hfJW85aId1Yx_33Dhb99_kp6YXT97WWLVgKbCH2KxrQsBmNmdk_XeNyuwKT6gI3bcVOB')",
+                        'login-bg': "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBx0N4fPqrLFvz0dXoFAxH4ONg67BnuJLkrHe13IExY462q8NmIPFtKWCQzmbdYkuvg6k2ps074nEvTrQPpN3i8c0I5qWjQtmBBT2vFLTMepMjVSBanRbPrmAaSfRYUVUBCNIfoq88sTaZZERK4hHcIz3vyscp99k2C4aaoqnXcoL-TglYbT1jlKus4zHdx_fG1XANTC47mEXyFPncu66lB-jlHgwiKEbEPOD7IF4Gt6QfSPyMvL7r_dScf-G2iPOyy6Q-8X2BLl1bu')",
+                        'sub-bg': "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAzdtP91xvkVfIURi5oBOC-5wUqsAvykBDyOKLpwB7uBpSdcyduq4l-ETOS0EUu17373M20kvGobxCWB9fvkF9GY8Rwv_JVOeNnweSU10_De4U9yusQnqjEfW9Y1I1Q4WzjpjiegilJgp-H_-riVFQOR_uwNYibc9Eao9xWYZ6ux55DbY6k6iIGTf2sKsEPeLTB1ZQ7eiY8aweZj8h8h__d_NHlib1vJe2lgwoYUr5OlZ5ZroxuoNMFPu9cshL6hMjPiGDGe2n0QIWZ')",
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        /* Custom Scrollbar for a premium feel */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #111827; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #374151; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #F97316; 
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-gray-100 dark:bg-[#121212] text-gray-900 dark:text-gray-100 font-sans">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

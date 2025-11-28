@@ -1,0 +1,18 @@
+export const IMAGES = {
+    LOGO_VERTICAL: "https://lh3.googleusercontent.com/aida-public/AB6AXuBM4RsNgfnXj-PD3fC0w3FZA22Nk-ViejoONtRQJ8kRRmJAkgZoHOw7h1snEuO_DH77wxplWG1IFrDF4jqfaSnOs9AEEFkfUxxTMkWwJfg57jNX4JAFO9CRvnVzsbwsO01wes3GiOyzE6YHaCe2SOwnA6qWmizYzBSvb_v1OnBcxhwSTtbFMnUsgWyP0IvJHuwtB3WJKIwdS5xUMHtAXJYQjZJ0FgPGO-TCW4eFxiAMwzgB2PfY2W_NsneUFj69qZkV0wEAFKjaPHqc",
+    LOGO_SIMPLE: "https://lh3.googleusercontent.com/aida-public/AB6AXuAgkeF4bZpBB8fPj4TOcrigG2oRqdV9LcynT2y0P0JIT-sO4lmygiVEgIDfuCOU8BS_mD6KjRx8r5KvXDd3shZpPW6LKXNWx7yYCdDrSvB53X6xZ_Uu2V7PWtTqBYoFGnc1ROPDP_eVH4cxMQ9qlOK8qtP4wqr5kroxG5TYULXKHRmskp0Jekqm-tkq4LzpchbuR_9b41_p9r8e_wUkGMAEjy9F9NuI8EjxF0FAaNeqdeMgXknEJ5n4qDQ7KP3Rj0iMSWFHXG4gkM1Z",
+    LOGO_ICON: "https://lh3.googleusercontent.com/aida-public/AB6AXuCMmDw6t_jbN2BCenFQicVnnX2Z-b3TNAUzGaRr5XRPqQn3iF1_rQ_4N_JAj4KOJbeEj1RYCr7hZJzu5E-7Qv3QeAbkta1POU6zjhsTpPpibw9YqhUW6g_i6w0mkGMrkcvafCOyztH5Ew6D_yNRD83_Iej0-BLP9_LbaceXqVheZ2s4Oh1CSuXijsobhkPG5bMBYAZH6XuEHQzdBMA3ornt_mPe4VlZ7u87HY421ZjZnqjLpmyphk0Sev6fQH6-fLklSu7fjFnmQOK_",
+    LOGO_WHITE: "https://lh3.googleusercontent.com/aida-public/AB6AXuDDZQfwHEw0zRNvJzzrUSjZpRJEy2KA1iGUKxscZz92po6rPxxtrp7w-EJtiErL5LDLLm3_YnGnEiGnwkCNwjzcLfjb1G94ViMV3I99YRPkDt9KKVYX75UPsJAmQgTaSSiDd_BTwDfdipOWXpDO_gqK3v59dimqQspNrZGJPCe3HRX3nLp-yvdblxty_a4yP5cfzJDHEsYgF6lhHhgKUJ9ziQZ_b4bX3mdVvtyGNcCQvlt_--ceQKSaLg47yZcAdv_RoAh3fQIcieYs",
+    LOGO_NAV: "https://lh3.googleusercontent.com/aida-public/AB6AXuB38R47UZELGn6OmGcDOv1N1lkhpC2KGXblJ8ubCcaev32KvLPJxoNQxmsuNPtGJ0369-L_YERxuOQAngUuueJObEEUvjfF-6rZclK7EIsps1ZvYuZupDY2vuguWIYc0Z5SJ2jD4g6B32tHJX1FxZDJOx6LJRcFxOuu4b_qJpQB94nY3wvxZcBBQkTMZHGYjWYSZ9RE75xDVUmNXHKMJxI4hZTKHaR3fpm-U3wrVYO1TkD2sgFlhp1rQMpdKdIboElj7002SmL9Sq5f",
+    TEXTURE_ASPHALT: "https://lh3.googleusercontent.com/aida-public/AB6AXuDO55j5kEJnuIinBSkwd9j978lJQnD4l8HrOWR_TD_cio0HoISHZYWCzxwCK356pXB5xXt27cgOas-YdYUlJQYpM72ckJNFr1n_IJp-X7Jq6IKYP11H72MxaV5o1RlYxA-3Kij0_2X3KRl68zIBxpQEioZF02VTi5OO2GCtpYDfy_JZJI-7QJ76Ad5lGo87xqoIDe68Of11hfJW85aId1Yx_33Dhb99_kp6YXT97WWLVgKbCH2KxrQsBmNmdk_XeNyuwKT6gI3bcVOB"
+};
+
+export const LINKS = {
+    DOWNLOAD: "#download-app",
+    MANAGE_SUB: "/subscription",
+    SUBSCRIPTION: '/subscription',
+    LOGIN: "/login",
+    REGISTER: "/register",
+    DASHBOARD: "/dashboard",
+    HOME: "/"
+};
